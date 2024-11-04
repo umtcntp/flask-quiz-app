@@ -1,5 +1,5 @@
 # İmport necessary libraries and modules
-from flask import Flask, request, redirect, url_for, render_template
+from flask import Flask, request, render_template
 from flask_sqlalchemy import SQLAlchemy
 
 # Create an instance of the Flask class for our web application
@@ -66,10 +66,10 @@ def calculate_score(form_data):
     score = 0  # Initialize the score to 0
     # Dictionary containing correct answers for the quiz questions
     correct_answers = {
-        'question1': 'Pandas',   # Correct answer for question 1
-        'question2': 'OpenCV',    # Correct answer for question 2
-        'question3': 'NLTK',      # Correct answer for question 3
-        'question4': 'TensorFlow'  # Correct answer for question 4
+        'question2': 'Pandas',   # Correct answer for question 2
+        'question3': 'OpenCV',    # Correct answer for question 3
+        'question4': 'NLTK',      # Correct answer for question 4
+        'question5': 'TensorFlow'  # Correct answer for question 5
     }
 
     # Loop through each question and its corresponding correct answer
